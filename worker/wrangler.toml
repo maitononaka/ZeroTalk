@@ -1,0 +1,17 @@
+name = "zerochat-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+APP_ORIGIN = "https://YOUR-USERNAME.github.io"
+APP_URL = "https://YOUR-USERNAME.github.io/YOUR-REPO"
+GOOGLE_CLIENT_ID = "REPLACE_ME.apps.googleusercontent.com"
+GOOGLE_REDIRECT_URI = "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/api/auth/google/callback"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "zerochat_db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[triggers]
+crons = ["*/15 * * * *"]

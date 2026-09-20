@@ -1,0 +1,11 @@
+{
+  "name": "ZeroChat",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "cd worker && npm install",
+  "forwardPorts": [8787, 8080],
+  "customizations": {
+    "vscode": {
+      "extensions": ["Cloudflare.wrangler", "dbaeumer.vscode-eslint"]
+    }
+  }
+}

@@ -92,7 +92,7 @@ async function handleApi(request, env) {
   const path = url.pathname;
   const origin = originFor(env, request);
 
-  if (request.method === 'OPTIONS') return json({}, 204, origin);
+　if (request.method === 'OPTIONS') return json({ ok: true }, 200, origin);
 
   if (path === '/api/health' && request.method === 'GET') {
     return json({ ok: true, service: 'zerochat-api', time: now() }, 200, origin);

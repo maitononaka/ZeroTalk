@@ -1,12 +1,12 @@
-name = "zerochat-api"
+name = "zerotalk"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
 [vars]
-APP_ORIGIN = "https://YOUR-USERNAME.github.io"
-APP_URL = "https://YOUR-USERNAME.github.io/YOUR-REPO"
+APP_ORIGIN = "https://maitononaka.github.io"
+APP_URL = "https://maitononaka.github.io/ZeroTalk/"
 GOOGLE_CLIENT_ID = "REPLACE_ME.apps.googleusercontent.com"
-GOOGLE_REDIRECT_URI = "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/api/auth/google/callback"
+GOOGLE_REDIRECT_URI = "https://zerotalk.maitomandeluxe.workers.dev/api/auth/google/callback"
 
 [[d1_databases]]
 binding = "DB"
